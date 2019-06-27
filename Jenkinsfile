@@ -4,7 +4,7 @@ pipeline {
     stage('') {
       steps {
         build(propagate: true, job: 'Test', wait: true)
-        sh 'echo "Hello"'
+        sh 'echo "Hell o"'
       }
     }
   }
