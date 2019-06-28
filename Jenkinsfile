@@ -1,6 +1,6 @@
 pipeline {
   agent {      
-     label "jenkins-docker"
+     label "jenkins-go"
   }
   stages {
     stage('') {
