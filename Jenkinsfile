@@ -1,10 +1,10 @@
 pipeline {
-agent { dockerfile true }
+agent { label "jenkins-maven" }
   stages {
     stage('') {
       steps {
           container('maven') {
-            sh "mvn deploy"
+            sh "docker build -t testy ."
           }
       }
     }
