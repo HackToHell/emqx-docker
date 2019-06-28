@@ -1,7 +1,5 @@
 pipeline {
-  agent {      
-     label "jenkins-go"
-  }
+agent { dockerfile true }
   stages {
     stage('') {
       steps {
