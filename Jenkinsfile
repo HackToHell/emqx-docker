@@ -1,9 +1,6 @@
 pipeline {
   agent {      
-    dockerfile {
-        filename 'Dockerfile'
-        label 'my-defined-label'
-    }
+     label "jenkins-docker"
   }
   stages {
     stage('') {
