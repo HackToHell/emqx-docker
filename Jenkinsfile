@@ -4,7 +4,8 @@ agent { label "jenkins-maven" }
     stage('') {
       steps {
           container('maven') {
-            sh "docker build -t testy ."
+            sh "ls -lah"
+            sh "pwd"
           }
       }
     }
